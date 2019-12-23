@@ -25,7 +25,7 @@ class MainPage extends Component {
     let QRResponse = await fetch(driverCheck, {
         method: 'POST',
         headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + this.props.location.state.token },
-        body: JSON.stringify({"qr_code": this.state.qrCodeValue}) // you can try "0001130211" for testing
+        body: JSON.stringify({"qr_code": this.state.qrCodeValue}) // you can try "" for testing
     })
     // To Do: Implement the case if the QR response has failed
     console.log(QRResponse);
