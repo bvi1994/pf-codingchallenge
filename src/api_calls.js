@@ -29,7 +29,7 @@ fetch('', {
 fetch('https://flask.powerflexsystems.com/check_driver_membership', {
     method: 'POST',
     headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + this.state.access_token },
-    body: {"qr_code": ""} // you can try "0001130211" for testing
+    body: {"qr_code": ""} // you can try "" for testing
   })
 
 // upon success
