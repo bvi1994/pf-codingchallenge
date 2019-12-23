@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Redirect} from 'react-router-dom';
 const fetch = require('node-fetch');
 
-const loginAPIAddress = `https://flask.powerflexsystems.com/driver_auth`;
+const loginAPIAddress = `https://flask.powerflexsystems.com/`;
 // Will need to put the API address in a constant file and export that
 
 // Consider to get a loader for the state
@@ -39,8 +39,8 @@ class LoginPage extends Component {
           method: 'POST',
           headers: { 'Accept': 'application/json', 'Content-Type': 'application/json'},
           body: JSON.stringify({
-            email: this.state.username, // ted+apptest@powerflex.com
-            password: this.state.password // testing
+            email: this.state.username, // @powerflex.com
+            password: this.state.password // ''
         }
       )
     })
